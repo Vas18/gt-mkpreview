@@ -1,0 +1,160 @@
+.buy {
+  // .buy__inner
+
+  &__inner {
+    margin-bottom: 75px;
+    overflow: hidden;
+    &:last-child {
+      margin: 0;
+    }
+    @media (max-width: 991.98px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 575.98px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  // .buy__title
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  // .buy__items
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -27px -4.071%;
+    @media (max-width: 991.98px) {
+      margin: -27px -1.5%;
+    }
+    @media (max-width: 575.98px) {
+      margin: -10px -7px;
+    }
+  }
+
+  // .buy__item
+
+  &__item {
+    width: calc((100% / 4) - (4.071% * 2));
+    margin: 27px 4.071%;
+    text-decoration: none;
+    @media (max-width: 991.98px) {
+      width: calc((100% / 3) - 3%);
+      margin: 27px 1.5%;
+    }
+    @media (max-width: 575.98px) {
+      width: calc((100% / 2) - 14px);
+      margin: 10px 7px;
+    }
+  }
+}
+
+.item-buy {
+  // .item-buy__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .item-buy__image
+
+  &__image {
+    overflow: hidden;
+    background: #c4c4c4;
+    padding: 0 0 101.5% 0;
+    border-radius: 15px;
+    margin-bottom: 6px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .item-buy__info
+
+  &__info {
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $radical-red;
+
+    span {
+      display: inline-block;
+      margin: 0 3px;
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 15px;
+    }
+  }
+
+  // .item-buy__price
+
+  &__price {
+  }
+
+  // .item-buy__weight
+
+  &__weight {
+  }
+
+  // .item-buy__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+    margin-bottom: 4px;
+    @media (max-width: 991.98px) {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 15px;
+    }
+  }
+
+  // .item-buy__brand
+
+  &__brand {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: $black;
+    }
+  }
+
+  // .item-buy__brand-img
+
+  &__brand-img {
+    margin-right: 6px;
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #c4c4c4;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

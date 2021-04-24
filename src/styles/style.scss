@@ -1,0 +1,12 @@
+@import '~normalize.css';
+@import 'vars';
+@import 'global';
+@import './components/mixins';
+@import './components/menu';
+@import './components/hamburger';
+
+@import './content/tabs';
+@import './content/buy';
+@import './content/reviews';
+@import './content/question';
+@import './content/comment';

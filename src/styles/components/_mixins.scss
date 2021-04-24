@@ -1,0 +1,35 @@
+@import "breakpoint";
+
+// SCSS МИКСИН ДЛЯ ПОДКЛЮЧЕНИЯ ШРИФТОВ
+
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff") format("woff"),
+      url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+// SCSS МИКСИН ДЛЯ АДАПТИВНЫХ ШРИФТОВ
+
+$maxWidth: 1920;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  @media (max-width: 767px) {
+    font-size: calc(
+      #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+    );
+  }
+  @media (mix-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+// h1{
+//   @include adaptiv-font(40, 24)
+// }

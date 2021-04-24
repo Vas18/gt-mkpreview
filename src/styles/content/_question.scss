@@ -1,0 +1,249 @@
+.question {
+  padding-bottom: 46px;
+  border-bottom: 1px solid #dfdede;
+  @media (max-width: 991.98px) {
+    padding-bottom: 40px;
+  }
+  @media (max-width: 575.98px) {
+    padding-bottom: 28px;
+  }
+  // .question__container
+
+  &__container {
+  }
+
+  // .question__form
+
+  &__form {
+  }
+
+  // .question__search
+
+  &__search {
+  }
+
+  // .question__inners
+
+  &__inners {
+    margin-top: 36px;
+    @media (max-width: 991.98px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 575.98px) {
+      margin-top: 13px;
+    }
+  }
+
+  // .question__inner
+
+  &__inner {
+    &:first-child {
+      margin-top: 0;
+    }
+    margin-top: 26px;
+    &:last-child {
+      margin-top: 7px;
+    }
+  }
+
+  // .question__title
+
+  &__title {
+    margin-bottom: 10px;
+    @media (max-width: 575.98px) {
+      &.question-title {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  // .question__input
+
+  &__input {
+  }
+
+  // .question__button
+
+  &__button {
+    margin-top: 28px;
+    .button {
+      max-width: 100%;
+    }
+  }
+}
+
+.question-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  @media (max-width: 575.98px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+.search-question {
+  // .search-question__title
+
+  &__title {
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
+    .hide {
+      @media (max-width: 575.98px) {
+        display: none;
+      }
+    }
+    .show {
+      display: none;
+      @media (max-width: 575.98px) {
+        display: block;
+      }
+    }
+    strong {
+      display: block;
+      font-weight: inherit;
+    }
+  }
+
+  // .search-question__wrapper
+
+  &__wrapper {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px #cbcbcb;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px 8px 0px;
+    margin-bottom: 42px;
+    @media (max-width: 575.98px) {
+      padding: 4px 5px 4px 0px;
+    }
+  }
+
+  // .search-question__input
+
+  &__input {
+    flex: 100%;
+    padding: 14px 24px;
+    input {
+      width: 100%;
+      background: transparent;
+      border-radius: 0;
+      border: 0;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 31px;
+      color: $black;
+      &::placeholder {
+        color: #d0d0d0;
+      }
+      @media (max-width: 991.98px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      @media (max-width: 575.98px) {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    @media (max-width: 575.98px) {
+      padding: 7px 10px 7px 11px;
+    }
+  }
+
+  // .search-question__button
+
+  &__button {
+    max-width: 164px;
+    width: 100%;
+    @media (max-width: 575.98px) {
+      max-width: 77px;
+    }
+  }
+
+  // .search-question__ask
+
+  &__ask {
+    text-align: center;
+    a {
+      white-space: nowrap;
+      color: $blue;
+      text-decoration: none;
+      position: relative;
+      transition: 0.3s;
+      &::before {
+        position: absolute;
+        content: '';
+        background: $blue;
+        height: 2px;
+        width: 100%;
+        top: calc(100% + 3px);
+        transition: 0.3s;
+      }
+      &:hover {
+        color: $black;
+        &::before {
+          background: $black;
+        }
+      }
+    }
+  }
+}
+
+.button {
+}
+.button--yellow {
+}
+.textarea {
+}
+.file-image {
+  display: flex;
+
+  // .file-image__wrapper
+
+  &__wrapper {
+    position: relative;
+    input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // .file-image__icon
+
+  &__icon {
+    margin-top: 8px;
+    margin-left: 7px;
+    background: #c4c4c4;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: $black;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 20px;
+      background: $black;
+    }
+    &:hover {
+      background: $mercury;
+    }
+  }
+}

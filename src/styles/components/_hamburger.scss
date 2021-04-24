@@ -1,0 +1,53 @@
+.burger__wrapper {
+  margin-left: 11px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  position: relative;
+  width: 32px;
+  height: 4px;
+  background-color: #fff;
+}
+
+.menu-icon::before {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  content: '';
+  width: 32px;
+  height: 4px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  top: 7px;
+  content: '';
+  width: 32px;
+  height: 4px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.menu-icon.menu-icon-active {
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+  transform: rotate(44deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+  transform: rotate(-44deg);
+  top: 0;
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}

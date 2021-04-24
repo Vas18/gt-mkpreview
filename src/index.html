@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NewProject</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.css"
+      integrity="sha512-uZTwaYYhJLFXaXYm1jdNiH6JZ1wLCTVnarJza7iZ1OKQmvi6prtk85NMvicoSobylP5K4FCdGEc4vk1AYT8b9Q=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="components">
+      <div class="overlay js-overlay"></div>
+      <div class="menu js-menu">
+        <div class="menu__content">
+          <div class="menu__header">
+            <div class="menu__buttons">
+              <div class="menu__button">
+                <a class="button" href="#">Войти</a>
+              </div>
+              <div class="menu__button">
+                <a class="button button--red" href="#">Регистрация</a>
+              </div>
+            </div>
+            <div class="menu__close js-menu-close"></div>
+          </div>
+          <div class="menu__body">
+            <div class="menu__navigation">
+              <nav>
+                <ul>
+                  <li><a href="#">Ссылка 1</a></li>
+                  <li><a href="#">Ссылка 2</a></li>
+                  <li><a href="#">Ссылка 3</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu__items">
+              <div class="menu__item item-menu">
+                <div class="item-menu__content">
+                  <a href="#" class="item-menu__title">Заказать товар</a>
+                  <div class="item-menu__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus
+                    risus.
+                  </div>
+                </div>
+              </div>
+              <div class="menu__item item-menu">
+                <div class="item-menu__content">
+                  <a href="#" class="item-menu__title">Заказать товар</a>
+                  <div class="item-menu__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus
+                    risus.
+                  </div>
+                </div>
+              </div>
+              <div class="menu__item item-menu">
+                <div class="item-menu__content">
+                  <a href="#" class="item-menu__title">Заказать товар</a>
+                  <div class="item-menu__descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse purus
+                    risus.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu__wrapper"></div>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="page">
+        <div class="page__player player">
+          <div class="playlist-player__header playlist-player__header--mobile">
+            <div class="playlist-player__link-back">
+              <a href="#">назад <span class="hide">в кабинет</span></a>
+            </div>
+            <div class="playlist-player__burger burger js-burger-menu">
+              <span>МЕНЮ</span>
+              <div class="burger__wrapper">
+                <span class="menu-icon"></span>
+              </div>
+            </div>
+          </div>
+          <div class="player__video">
+            <iframe
+              src="https://player.vimeo.com/video/76979871?embedparameter=value"
+              width="640"
+              height="360"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="player__playlist playlist-player js-playlist-player">
+            <div class="playlist-player__content">
+              <div class="playlist-player__header">
+                <div class="playlist-player__link-back">
+                  <a href="#">назад <span class="hide">в кабинет</span></a>
+                </div>
+                <div class="playlist-player__burger burger js-burger-menu-mobile">
+                  <span>МЕНЮ</span>
+                  <div class="burger__wrapper">
+                    <span class="menu-icon"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist-player__body">
+                <div class="playlist-player__close js-playlist-close"></div>
+                <div class="playlist-player__wrapper">
+                  <div class="playlist-player__title">
+                    Здесь будет какое-то длинное название урока
+                  </div>
+                  <div class="playlist-player__user">
+                    <div class="playlist-player__user-img">
+                      <img src="src/assets/images/image-1.jpg" alt="" />
+                    </div>
+                    <span>Анна Феликова</span>
+                  </div>
+                </div>
+              </div>
+              <div class="playlist-player__bottom">
+                <div class="playlist-player__top">
+                  <span>Содержание</span>
+                </div>
+                <div data-simplebar class="playlist-player__items">
+                  <div class="playlist-player__item item-playlist">
+                    <div class="item-playlist__content accordion">
+                      <div class="item-playlist__num"></div>
+                      <div class="item-playlist__wrapper">
+                        <div class="item-playlist__title">Вступление, что будет в уроке</div>
+                        <div class="item-playlist__time">
+                          <div class="item-playlist__time-icon">
+                            <img src="src/assets/images/time.png" alt="" />
+                          </div>
+                          <span>12:25</span>
+                        </div>
+                      </div>
+                      <div class="item-playlist__arrow">
+                        <img src="src/assets/images/arrow.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-playlist__subcontent accordion-panel">
+                      <div class="item-playlist__subcontent-items">
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="playlist-player__item item-playlist">
+                    <div class="item-playlist__content accordion">
+                      <div class="item-playlist__num"></div>
+                      <div class="item-playlist__wrapper">
+                        <div class="item-playlist__title">Вступление, что будет в уроке</div>
+                        <div class="item-playlist__time">
+                          <div class="item-playlist__time-icon">
+                            <img src="src/assets/images/time.png" alt="" />
+                          </div>
+                          <span>12:25</span>
+                        </div>
+                      </div>
+                      <div class="item-playlist__arrow">
+                        <img src="src/assets/images/arrow.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-playlist__subcontent accordion-panel">
+                      <div class="item-playlist__subcontent-items">
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="playlist-player__item item-playlist">
+                    <div class="item-playlist__content accordion">
+                      <div class="item-playlist__num"></div>
+                      <div class="item-playlist__wrapper">
+                        <div class="item-playlist__title">Вступление, что будет в уроке</div>
+                        <div class="item-playlist__time">
+                          <div class="item-playlist__time-icon">
+                            <img src="src/assets/images/time.png" alt="" />
+                          </div>
+                          <span>12:25</span>
+                        </div>
+                      </div>
+                      <div class="item-playlist__arrow">
+                        <img src="src/assets/images/arrow.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-playlist__subcontent accordion-panel">
+                      <div class="item-playlist__subcontent-items">
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="playlist-player__item item-playlist">
+                    <div class="item-playlist__content accordion">
+                      <div class="item-playlist__num"></div>
+                      <div class="item-playlist__wrapper">
+                        <div class="item-playlist__title">Вступление, что будет в уроке</div>
+                        <div class="item-playlist__time">
+                          <div class="item-playlist__time-icon">
+                            <img src="src/assets/images/time.png" alt="" />
+                          </div>
+                          <span>12:25</span>
+                        </div>
+                      </div>
+                      <div class="item-playlist__arrow">
+                        <img src="src/assets/images/arrow.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-playlist__subcontent accordion-panel">
+                      <div class="item-playlist__subcontent-items">
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="playlist-player__item item-playlist">
+                    <div class="item-playlist__content accordion">
+                      <div class="item-playlist__num"></div>
+                      <div class="item-playlist__wrapper">
+                        <div class="item-playlist__title">Вступление, что будет в уроке</div>
+                        <div class="item-playlist__time">
+                          <div class="item-playlist__time-icon">
+                            <img src="src/assets/images/time.png" alt="" />
+                          </div>
+                          <span>12:25</span>
+                        </div>
+                      </div>
+                      <div class="item-playlist__arrow">
+                        <img src="src/assets/images/arrow.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-playlist__subcontent accordion-panel">
+                      <div class="item-playlist__subcontent-items">
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="playlist-player__item item-playlist">
+                    <div class="item-playlist__content accordion">
+                      <div class="item-playlist__num"></div>
+                      <div class="item-playlist__wrapper">
+                        <div class="item-playlist__title">Вступление, что будет в уроке</div>
+                        <div class="item-playlist__time">
+                          <div class="item-playlist__time-icon">
+                            <img src="src/assets/images/time.png" alt="" />
+                          </div>
+                          <span>12:25</span>
+                        </div>
+                      </div>
+                      <div class="item-playlist__arrow">
+                        <img src="src/assets/images/arrow.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="item-playlist__subcontent accordion-panel">
+                      <div class="item-playlist__subcontent-items">
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                        <a href="#" class="item-playlist__subcontent-item">
+                          <div class="item-playlist__subcontent-icon">
+                            <img src="src/assets/images/play.png" alt="" />
+                          </div>
+                          <div class="item-playlist__subcontent-title">
+                            Вступление, что будет в уроке
+                          </div>
+                          <div class="item-playlist__subcontent-time">2:25</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__content">
+          <div class="page__tabs" data-tabs>
+            <div class="page__tabs-header">
+              <div class="page__tabs-wrapper">
+                <div class="container">
+                  <div class="page__tabs-triggers" data-triggers>
+                    <a href="#tech-card" class="page__tabs-triger"
+                      >Тех карта <span class="hide">и Рецепт</span></a
+                    >
+                    <a href="#buy" class="page__tabs-triger">Где купить</a>
+                    <a href="#question" class="page__tabs-triger"
+                      ><span class="hide">Задать</span> вопрос</a
+                    >
+                    <a href="#reviews" class="page__tabs-triger"
+                      ><span class="hide">Оставить</span> отзыв</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="page__button-open button-open js-button-open">
+                <div class="button-open__icon">
+                  <img src="src/assets/images/content.png" alt="" />
+                </div>
+                <span>СОДЕРЖАНИЕ</span>
+              </div>
+            </div>
+
+            <div class="page__tabs-body" data-body>
+              <div class="page__tabs-content page__tabs-content--tech-card" data-id="#tech-card">
+                <div class="playlist-player__wrapper playlist-player__wrapper--mobile">
+                  <div class="playlist-player__title">
+                    Здесь будет какое-то длинное название урока
+                  </div>
+                  <div class="playlist-player__user">
+                    <div class="playlist-player__user-img">
+                      <img src="src/assets/images/image-1.jpg" alt="" />
+                    </div>
+                    <span>Анна Феликова</span>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="info">
+                    <div class="info__inner">
+                      <div class="info-files">
+                        <div class="info-files__title title">Файлы для урока</div>
+                        <div class="info-files__list">
+                          <ul>
+                            <li>
+                              <div class="info-files__wrapper">
+                                <span>Название файла 1</span> <a download="" href="#">скачать</a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="info-files__wrapper">
+                                <span>Название файла 2</span> <a download="" href="#">скачать</a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="info-files__wrapper">
+                                <span>Название файла 3</span> <a download="" href="#">скачать</a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="info-files__images ibg">
+                                <img src="src/assets/images/image-2.jpg" alt="" />
+                              </div>
+                              <div class="info-files__wrapper">
+                                <span>Название фото</span> <a download="" href="#">скачать</a>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info__inner">
+                      <div class="tech-card">
+                        <div class="tech-card__title title">Рецепт и тех карта</div>
+                        <div class="tech-card__list">
+                          <ul>
+                            <li>
+                              Соединить сахар, желтки и крахмал и растереть их венчиком до
+                              однородности
+                            </li>
+                            <li>
+                              Довести молоко до кипения (кипятить не нужно), и тонкой струйкой влить
+                              его при постоянном помешивании в яично-сахарную смесь. После этого,
+                              всю массу необходимо перемешивать до полного растворения сахара, и
+                              только затем поставить чашу с ней на медленный огонь
+                            </li>
+                            <li>
+                              Довести массу до загустения, нагревая ее на медленном огне и постоянно
+                              помешивая
+                            </li>
+                            <li>
+                              В горячую заварную основу добавить масло и растопленный шоколад,
+                              перемешать до однородности
+                            </li>
+                            <li>
+                              Накрыть крем пищевой пленкой «в контакт» и убрать в холодильник до
+                              полного остывания и стабилизации
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page__tabs-content" data-id="#buy">
+                <div class="container">
+                  <div class="buy">
+                    <div class="buy__inner">
+                      <div class="buy__title title">Ингредиенты</div>
+                      <div class="buy__items">
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg">
+                              <img src="src/assets/images/image-1.jpg" alt="" />
+                            </div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="buy__inner">
+                      <div class="buy__title title">Ингредиенты</div>
+                      <div class="buy__items">
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg">
+                              <img src="src/assets/images/image-1.jpg" alt="" />
+                            </div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="buy__item item-buy">
+                          <div class="item-buy__content">
+                            <div class="item-buy__image ibg"></div>
+                            <div class="item-buy__info">
+                              <div class="item-buy__price">1000 Р</div>
+                              <span>/</span>
+                              <div class="item-buy__weight">1кг</div>
+                            </div>
+                            <div class="item-buy__title">Ванильные капкейки</div>
+                            <div class="item-buy__brand">
+                              <div class="item-buy__brand-img"></div>
+                              <span>Имя Брэнда</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page__tabs-content" data-id="#question">
+                <div class="container">
+                  <div class="question">
+                    <div class="question__container container--small">
+                      <div class="question__form">
+                        <form action="#" method="post">
+                          <div class="question__search search-question">
+                            <div class="search-question__title question-title">
+                              <span>Есть вопрос? </span>
+                              <span class="hide"
+                                >Попробуйте найти ответ среди предыдущих вопросов.</span
+                              >
+                              <span class="show">Попробуйте найти ответ.</span
+                              ><strong>Введите ключевое слово</strong>
+                            </div>
+                            <div class="search-question__wrapper">
+                              <div class="search-question__input">
+                                <input
+                                  type="text"
+                                  name="search-question"
+                                  placeholder="например: ломаются крышечки"
+                                />
+                              </div>
+                              <div class="search-question__button">
+                                <button class="button button--yellow">НАЙТИ</button>
+                              </div>
+                            </div>
+                            <div class="search-question__ask question-title">
+                              <span>Не нашли ответ на ваш вопрос?</span>
+                              <a href="#"> Задать вопрос</a>
+                            </div>
+                          </div>
+                        </form>
+                        <form action="#" method="post">
+                          <div class="question__inners">
+                            <div class="question__inner">
+                              <div class="question__title question-title">Тема вопроса</div>
+                              <div class="question__input input">
+                                <input type="text" name="input-theme" placeholder="тема вопроса" />
+                              </div>
+                            </div>
+                            <div class="question__inner">
+                              <div class="question__title question-title">Вопрос</div>
+                              <div class="question__input textarea">
+                                <textarea name="question-textarea" cols="30" rows="10"></textarea>
+                              </div>
+                            </div>
+                            <div class="question__inner file-image">
+                              <div class="question__title question-title">Фото</div>
+                              <div class="file-image__wrapper">
+                                <label
+                                  ><span class="file-image__icon"></span>
+                                  <input
+                                    class="visually-hidden"
+                                    type="file"
+                                    multiple
+                                    accept="image/*"
+                                /></label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="question__button">
+                            <button class="button button--yellow">ЗАДАТЬ ВОПРОС</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="comment__container container--small">
+                      <div class="comment__items">
+                        <div class="comment__item item-comment">
+                          <div class="item-comment__content">
+                            <div class="item-comment__image">
+                              <img src="src/assets/images/author.jpg" alt="" />
+                            </div>
+                            <div class="item-comment__wrapper">
+                              <div class="item-comment__name">Username</div>
+                              <div class="item-comment__text">
+                                <p>
+                                  Thank you so much for this class I just listened through it all
+                                  now i am going back through and watching it again and attempting
+                                  to do a excel sheet for my business! I was wondering how do I
+                                  balance it starting out with a business that already has orders
+                                  and such. I also am in need of help with how to go about balancing
+                                  with preordered items.
+                                </p>
+                              </div>
+                              <div class="item-comment__button">
+                                <a class="btn-link" href="#">Reply</a>
+                              </div>
+                              <div class="item-comment__answer answer">
+                                <form action="#" method="post">
+                                  <div class="answer__content">
+                                    <div class="answer__image">
+                                      <img src="src/assets/images/author.jpg" alt="" />
+                                    </div>
+                                    <div class="answer__wrapper">
+                                      <div class="answer__name">Username</div>
+                                      <div class="answer__text">
+                                        <p>
+                                          Thank you so much for this class I just listened through
+                                          it all now i am going back through and watching it again
+                                          and attempting to do a excel sheet for my business!
+                                        </p>
+                                      </div>
+                                      <div class="answer__textarea textarea">
+                                        <textarea
+                                          name="answer-textarea"
+                                          cols="30"
+                                          rows="10"
+                                          placeholder="Ваш ответ"
+                                        ></textarea>
+                                      </div>
+                                      <div class="answer__bottom">
+                                        <div class="answer__file-image file-image">
+                                          <div class="question__title">Фото</div>
+                                          <div class="file-image__wrapper">
+                                            <label
+                                              ><span class="file-image__icon"></span>
+                                              <input
+                                                class="visually-hidden"
+                                                type="file"
+                                                multiple
+                                                accept="image/*"
+                                            /></label>
+                                          </div>
+                                        </div>
+                                        <div class="answer__send-button">
+                                          <button class="button">Ответить</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page__tabs-content" data-id="#reviews">
+                <div class="container">
+                  <div class="reviews">
+                    <div class="reviews__form">
+                      <div class="reviews__container container--small">
+                        <form action="#" method="post">
+                          <div class="reviews__inner">
+                            <div class="reviews__title">Ваша оценка</div>
+                            <div class="reviews__select select">
+                              <div class="custom-select-wrapper">
+                                <div class="custom-select">
+                                  <div class="custom-select__trigger">
+                                    <span>Супер!</span>
+                                    <div class="arrow">
+                                      <img src="src/assets/images/arrow.svg" alt="" />
+                                    </div>
+                                  </div>
+                                  <div class="custom-options">
+                                    <span class="custom-option selected" data-value="grade-1"
+                                      >Супер!</span
+                                    >
+                                    <span class="custom-option" data-value="grade-2">Отлично!</span>
+                                    <span class="custom-option" data-value="grade-3">Плохо!</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="reviews__inner">
+                            <div class="reviews__title">Ваш отзыв</div>
+                            <div class="reviews__textarea textarea">
+                              <textarea
+                                name="review"
+                                id="review"
+                                cols="30"
+                                rows="10"
+                                required
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="reviews__button">
+                            <button class="button button--yellow">ОТПРАВИТЬ ОТЗЫВ</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="reviews__container container--small">
+                      <div class="reviews__items">
+                        <div class="reviews__item review">
+                          <div class="review__content">
+                            <div class="review__image">
+                              <img src="src/assets/images/author.jpg" alt="" />
+                            </div>
+                            <div class="review__wrapper">
+                              <div class="review__name">Username</div>
+                              <div class="review__grade">
+                                <span>Оценка:</span> <strong>Супер!</strong>
+                              </div>
+                              <div class="review__text">
+                                <p>
+                                  Thank you so much for this class I just listened through it all
+                                  now i am going back through and watching it again and attempting
+                                  to do a excel sheet for my business! I was wondering how do I
+                                  balance it starting out with a business that already has orders
+                                  and such. I also am in need of help with how to go about balancing
+                                  with preordered items.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reviews__item review">
+                          <div class="review__content">
+                            <div class="review__image">
+                              <img src="src/assets/images/author.jpg" alt="" />
+                            </div>
+                            <div class="review__wrapper">
+                              <div class="review__name">Username</div>
+                              <div class="review__grade">
+                                <span>Оценка:</span> <strong>Супер!</strong>
+                              </div>
+                              <div class="review__text">
+                                <p>
+                                  Thank you so much for this class I just listened through it all
+                                  now i am going back through and watching it again and attempting
+                                  to do a excel sheet for my business! I was wondering how do I
+                                  balance it starting out with a business that already has orders
+                                  and such. I also am in need of help with how to go about balancing
+                                  with preordered items.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.0/simplebar.min.js"
+      integrity="sha512-AS9rZZDdb+y4W2lcmkNGwf4swm6607XJYpNST1mkNBUfBBka8btA6mgRmhoFQ9Umy8Nj/fg5444+SglLHbowuA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
